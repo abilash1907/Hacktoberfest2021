@@ -1,4 +1,4 @@
-def isPrime(n):
+def Prime(n):
 	if n <= 1:
 		return False
 
@@ -9,5 +9,7 @@ def isPrime(n):
 
 	return True
 
-n=input("enter a number:")
-print("prime") if isPrime(int(n)) else print("not prime")
+n=input("Enter a number:")
+print("Entered number is a prime number")
+if Prime(int(n))
+else print("Entered number is not a prime number")
