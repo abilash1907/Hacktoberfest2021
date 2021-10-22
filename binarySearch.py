@@ -1,17 +1,15 @@
-input_str = input('Enter elements of a list separated by space ')
+input_str = input("Enter elements of a list separated by space ")
 print("\n")
-list1 = input_str.split()   #to convert the input string to list
+list1 = input_str.split()  # to convert the input string to list
 
-print('list: ', list1)
+print("list: ", list1)
 
-for i in range(len(list1)):     #to convert each element to integer type
+for i in range(len(list1)):  # to convert each element to integer type
     list1[i] = int(list1[i])
 
 
-
-#function definition
-def binary_search(list1,n):
-
+# function definition
+def binary_search(list1, n):
 
     low = 0
     high = len(list1) - 1
@@ -24,15 +22,14 @@ def binary_search(list1,n):
         if list1[mid] < n:
             low = mid + 1
 
-
         elif list1[mid] > n:
             high = mid - 1
-
 
         else:
             return mid
 
     return -1
+
 
 n = input("enter the number to be searched:")
 result = binary_search(list1, int(n))
